@@ -1,0 +1,238 @@
+@import "../../vars.css";
+
+.container {
+  margin: 100px 10% 50px;
+  color: var(--color-text);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 24px;
+}
+
+.notFound {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.backLink:hover {
+  transform: scale(1.1);
+}
+
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.imageContainer {
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.screenshot {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-primary);
+  padding: 10px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.navButton {
+  background-color: var(--color-dark);
+  border: none;
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 2;
+}
+
+.navButton:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.prevButton {
+  margin-right: 20px;
+}
+
+.nextButton {
+  margin-left: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s, transform 0.3s;
+  border: 3px solid transparent;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border: 3px solid var(--color-dark);
+}
+
+.projectInfo {
+  background: linear-gradient(180deg, #a3b4a0 0%, #758871 100%);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.projectInfo h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.projectInfo p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills {
+  margin-bottom: 25px;
+}
+
+.skills h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill {
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  padding: 5px 15px;
+  border-radius: 100px;
+  font-size: 16px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 10px 25px;
+  transition: transform 0.3s;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-top: 80px;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: var(--color-text-dark);
+  }
+  
+  .galleryContainer {
+    flex-direction: column;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    order: 2;
+    margin: 20px 0;
+  }
+  
+  .navButton {
+    position: relative;
+    order: 1;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .prevButton, .nextButton {
+    margin: 0 5px;
+  }
+  
+  .thumbnails {
+    flex-wrap: wrap;
+  }
+  
+  .projectInfo, .links a {
+    color: var(--color-text-dark);
+  }
+}

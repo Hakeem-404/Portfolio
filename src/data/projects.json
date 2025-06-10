@@ -1,0 +1,328 @@
+[
+    {
+      "title": "AI-based Symptom Checker",
+      "imageSrc": "aihs/1.png",
+      "description": "An intelligent web application designed to assess the likelihood of diabetes, stroke, and heart disease using Random Forest models. The platform allows users to input personal health data and symptoms to receive personalised risk insights, recommendations, and triage guidance. Built with a full-stack architecture using Vue.js, Node.js, MySQL, and a Flask microservice for machine learning predictions.",
+      "skills": ["Vue.js", "Express", "Node", "MySQL", "Css", "Machine Learning", "Flask", "Python","Random Forest", "scikit-learn", "pandas", "joblib", "JSON", "JavaScript", "HTML"],
+      "demo": "https://vimeo.com/1082485250/881f0cc658",
+      "source": "https://github.com/Hakeem-404/AI-based-Symptom-Checker-FullStack",
+      "screenshots": [
+        {
+          "idx": 1,
+          "src": "aihs/1.png",
+          "alt": "AI Symptom Checker Landing Page",
+          "description": "Landing page of the AI-based Symptom Checker application."
+        },
+        {
+          "idx": 2,
+          "src": "aihs/2.png",
+          "alt": "AI Symptom Checker Login Page",
+          "description": "Login page of the AI-based Symptom Checker application."
+        },
+        {
+          "idx": 3,
+          "src": "aihs/3.png",
+          "alt": "AI Symptom Checker Forgot Password Page",
+          "description": "Forgot password page of the AI-based Symptom Checker application."
+        },
+        {
+          "idx": 4,
+          "src": "aihs/4.png",
+          "alt": "AI Symptom Checker Sign up Page",
+          "description": "Sign up page of the AI-based Symptom Checker application."
+        },
+        {
+          "idx": 5,
+          "src": "aihs/5.png",
+          "alt": "AI Symptom Checker Sign up Confirmation Page",
+          "description": "Sign up confirmation page of the AI-based Symptom Checker application."
+        },
+        {
+          "idx": 6,
+          "src": "aihs/6.png",
+          "alt": "AI Symptom Checker Dashboard Page",
+          "description": "Immediate unpopulated dashboard for new users who have yet to complete their profile registration."
+        },
+        {
+          "idx": 7,
+          "src": "aihs/7.png",
+          "alt": "AI Symptom Checker Complete Profile Page",
+          "description": "Step 1 of the Multi-step profile completion form."
+        },
+        {
+          "idx": 8,
+          "src": "aihs/8.png",
+          "alt": "AI Symptom Checker Complete Profile Page 2",
+          "description": "Step 2 of the Multi-step profile completion form."
+        },
+        {
+          "idx": 9,
+          "src": "aihs/9.png",
+          "alt": "AI Symptom Checker Complete Profile Page 3",
+          "description": "Step 3 (final Step) of the Multi-step profile completion form."
+        },
+        {
+          "idx": 10,
+          "src": "aihs/10.png",
+          "alt": "AI Symptom Checker Dashboard Page 2",
+          "description": "Populated dashboard page after completing the profile registration."
+        },
+        {
+          "idx": 11,
+          "src": "aihs/11.png",
+          "alt": "AI Symptom Checker Profile Management Page",
+          "description": "Profile page for user interaction with the AI system to manage their personal information."
+        },
+        {
+          "idx": 12,
+          "src": "aihs/12.png",
+          "alt": "AI Symptom Checker Profile Management Page 2",
+          "description": "Profile page for user interaction with the AI system to manage their personal information 2."
+        },
+        {
+          "idx": 13,
+          "src": "aihs/13.png",
+          "alt": "AI Symptom Checker Profile Management Page 3",
+          "description": "Profile page for user interaction with the AI system to manage their personal information 3."
+        },
+        {
+          "idx": 14,
+          "src": "aihs/14.png",
+          "alt": "AI Symptom Checker Health Metrics Page",
+          "description": "Health metrics page that visualises changes recorded in user health metrics over time for users to track and stay aware of their health journey."
+        },
+        {
+          "idx": 15,
+          "src": "aihs/15.png",
+          "alt": "AI Symptom Checker Health Insights Page",
+          "description": "Health insights page for users to recieve recommendations based on their current health status."
+        },
+        {
+          "idx": 16,
+          "src": "aihs/16.png",
+          "alt": "AI Symptom Checker Symptom Checker Page",
+          "description": "Symptom checker page for users to select symptoms."
+        },
+        {
+          "idx": 17,
+          "src": "aihs/17.png",
+          "alt": "AI Symptom Checker Symptom Checker Page 2",
+          "description": "Symptom checker page for users to select symptoms 2."
+        },
+        {
+          "idx": 18,
+          "src": "aihs/18.png",
+          "alt": "AI Symptom Checker Symptom Assessment Page",
+          "description": "Symptom checker page for users to recieve assessment based on their health profile and selected symptoms to recieve personalised recommendations."
+        },
+        {
+          "idx": 19,
+          "src": "aihs/19.png",
+          "alt": "AI Symptom Checker Symptom Analysis History Page",
+          "description": "Symptom analysis history page for users to view their past symptom analysis and recommendations."
+        }
+      ]
+    },
+    {
+      "title": "Project Expense Tracker Mobile App",
+      "imageSrc": "androidstudio/1.png",
+      "description": "Developed a comprehensive Android application for project managers to track, manage, and analyse expenses across multiple projects. This native mobile solution features real-time budget monitoring, expense categorisation, and data visualisation to streamline financial oversight.",
+      "skills": ["Android Studio", "Java", "XML", "Firebase", "SQLite"],
+      "demo": "https://vimeo.com/1082480063/347d067b89",
+      "source": "https://github.com/Hakeem-404/Project-Expense-Tracker-Android-App",
+      "screenshots": [
+        {
+          "idx": 1,
+          "src": "androidstudio/1.png",
+          "alt": "Project Expense Tracker App Home Page",
+          "description": "Homepage of the Project Expense Tracker application."
+        },
+        {
+          "idx": 2,
+          "src": "androidstudio/2.png",
+          "alt": "Project Expense Tracker App Menu",
+          "description": "Tabbed menu displaying the features of the Expense Tracker application."
+        },
+        {
+          "idx": 3,
+          "src": "androidstudio/3.png",
+          "alt": "Project Expense Tracker App Restore Projects Feature",
+          "description": "Restoration from firebase cloud, this features restored the projectcs stored for the Project Expense Tracker application."
+        },
+        {
+          "idx": 4,
+          "src": "androidstudio/4.png",
+          "alt": "Project Expense Tracker App Restore Projects Feature 2",
+          "description": "Restoration process from firebase cloud of the Project Expense Tracker application."
+        },
+        {
+          "idx": 5,
+          "src": "androidstudio/5.png",
+          "alt": "Project Expense Tracker App Populated Home Page",
+          "description": "Homepage of the Project Expense Tracker application populated with projects."
+        },
+        {
+          "idx": 6,
+          "src": "androidstudio/6.png",
+          "alt": "Project Expense Tracker App Search Feature",
+          "description": "Search Projects available in Project Expense Tracker application."
+        },
+        {
+          "idx": 7,
+          "src": "androidstudio/7.png",
+          "alt": "Project Expense Tracker App Advanced Search and Filter Feature",
+          "description": "Advanced Search and FIlter of Projects available in Project Expense Tracker application."
+        },
+        {
+          "idx": 8,
+          "src": "androidstudio/8.png",
+          "alt": "Project Expense Tracker App Advanced Search and Filter Result",
+          "description": "Advanced Search and Filter result."
+        },
+        {
+          "idx": 9,
+          "src": "androidstudio/9.png",
+          "alt": "Project Expense Tracker App View Project Details Page",
+          "description": "View available project details stored in the Project Expense Tracker application."
+        },
+        {
+          "idx": 10,
+          "src": "androidstudio/10.png",
+          "alt": "Project Expense Tracker App Dropdown Menu Feature",
+          "description": "Dropdown menu feature of the Project Expense Tracker application."
+        },
+        {
+          "idx": 11,
+          "src": "androidstudio/11.png",
+          "alt": "Project Expense Tracker App Date Picker Feature",
+          "description": "Date picker feature of the Project Expense Tracker application."
+        },
+        {
+          "idx": 12,
+          "src": "androidstudio/12.png",
+          "alt": "Project Expense Tracker App View Expense Page",
+          "description": "View available expense of a project in the Project Expense Tracker application."
+        },
+        {
+          "idx": 13,
+          "src": "androidstudio/13.png",
+          "alt": "Project Expense Tracker App Add Expense Page",
+          "description": "Add expense to a project in the Project Expense Tracker application."
+        },
+        {
+          "idx": 14,
+          "src": "androidstudio/14.png",
+          "alt": "Project Expense Tracker App Edit Expense Page",
+          "description": "Edit expense of a project from the Project Expense Tracker application."
+        },
+        {
+          "idx": 15,
+          "src": "androidstudio/15.png",
+          "alt": "Project Expense Tracker App Delete Project Feature",
+          "description": "Delete expense of a project from the Project Expense Tracker application."
+        }
+      ]
+    },
+    {
+      "title": "Expense Tracker MAUI APP",
+      "imageSrc": "maui/1.png",
+      "description": "Created a cross-platform expense management system using .NET MAUI framework to provide seamless expense tracking across devices. Implemented features including project favoriting, expense categorisation, and interactive budget visualisation with synchronised cloud storage.",
+      "skills": [".NET MAUI", "C#", "XAML", "MVVM","Firebase"],
+      "demo": "https://vimeo.com/1082479907/b96ada9018",
+      "source": "https://github.com/Hakeem-404/.MAUI-Project-Expense-Tracker-App",
+      "screenshots": [
+        {
+          "idx": 1,
+          "src": "maui/1.png",
+          "alt": "Expense Tracker MAUI App Home Page",
+          "description": "Homepage of the Expense Tracker MAUI application."
+        },
+        {
+          "idx": 2,
+          "src": "maui/2.png",
+          "alt": "Expense Tracker MAUI App Projects Details Page",
+          "description": "View details of selected project stored in the cloud from the Project Expense Tracker application."
+        },
+        {
+          "idx": 3,
+          "src": "maui/3.png",
+          "alt": "Expense Tracker MAUI App Favourite Feature",
+          "description": "Clicking on the favourite button to set a project as a favourite in the Expense Tracker MAUI application populated with projects."
+        },
+        {
+          "idx": 4,
+          "src": "maui/4.png",
+          "alt": "Expense Tracker MAUI App Menu",
+          "description": "View the features available in the Expense Tracker MAUI application."
+        },
+        {
+          "idx": 5,
+          "src": "maui/5.png",
+          "alt": "Expense Tracker MAUI App Favourite Page",
+          "description": "View all projects marked as favourite in the Expense Tracker MAUI application."
+        },
+        {
+          "idx": 6,
+          "src": "maui/6.png",
+          "alt": "Expense Tracker MAUI App Search Feature",
+          "description": "Search Projects available in the Expense Tracker MAUI application (Stored using the Project Expense Tracker App)."
+        },
+        {
+          "idx": 7,
+          "src": "maui/7.png",
+          "alt": "Expense Tracker MAUI Add Expense Page",
+          "description": "Add expense to a project in the Expense Tracker MAUI application."
+        }
+      ]
+    },
+    {
+      "title": "Virtual Healthcare Assistant",
+      "imageSrc": "hva/1.png",
+      "description": "Developed an intelligent healthcare consultation platform utilizing advanced NLP algorithms to analyze patient-reported symptoms and provide personalized medical guidance. ",
+      "skills": ["NLP", "Flask", "Python", "HTML", "CSS", "PyTorch", "Transformers", "Scikit-learn", "Pandas", "BioBERT" ],
+      "demo": "https://vimeo.com/1083181936/f3a411c3e2",
+      "source": "https://github.com/Hakeem-404/Virtual-Healthcare-Assistant",
+      "screenshots": [
+        {
+          "idx": 1,
+          "src": "hva/1.png",
+          "alt": "Healthcare Virtual Assistant Home Page",
+          "description": "Homepage of the Healthcare Virtual Assistant application."
+        },
+        {
+          "idx": 2,
+          "src": "hva/2.png",
+          "alt": "Healthcare Virtual Assistant Home Page 2",
+          "description": "Filling the input forms of the Healthcare Virtual Assistant application."
+        },
+        {
+          "idx": 3,
+          "src": "hva/3.png",
+          "alt": "Healthcare Virtual Assistant Chat Page 3",
+          "description": "Input validation error in the Healthcare Virtual Assistant application."
+        },
+        {
+          "idx": 4,
+          "src": "hva/4.png",
+          "alt": "Healthcare Virtual Assistant Chat Page 4",
+          "description": "Symptom Analysis of the Healthcare Virtual Assistant application."
+        }
+      ]
+    },
+    {
+      "title": "Java Based Chat Application",
+      "imageSrc": "java/1.png",
+      "description": "Developed a Java-based chat application that enables real-time communication between users. The application features a user-friendly interface, allowing users to send and receive messages instantly. It supports multiple chat rooms, private messaging, and chat coordinators. ",
+      "skills": ["Java", "JUnit", "Design Patterns", "Git/Version Control (Azure DevOps)", "Socket Programming"],
+      "demo": "https://vimeo.com/1083185139/4528bfa21d",
+      "source": "https://github.com/Hakeem-404/Java-Network-Chat-Application",
+      "screenshots":[
+        {
+          "idx": 1,
+          "src": "java/1.png",
+          "alt": "Java Chat application",
+          "description": "Java Chat application showing the chat rooms opened."
+        }
+      ]
+    }
+  ]
