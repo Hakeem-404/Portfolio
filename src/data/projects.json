@@ -324,5 +324,21 @@
           "description": "Java Chat application showing the chat rooms opened."
         }
       ]
+    },
+    {
+      "title": "JustPlay",
+      "imageSrc": "justplay/1.png",
+      "description": "Currently developing a TypeScript-based web application designed to host and organize sports events. The platform enables users to create, manage, and participate in events while facilitating real-time communication. It features a user-friendly interface that supports instant messaging, multiple chat rooms, and private conversations, ensuring seamless interaction and coordination among users.",
+      "skills": ["TypeScript", "SupaBase", "Git", "HTML"],
+      "demo": "",
+      "source": "",
+      "screenshots":[
+        {
+          "idx": 1,
+          "src": "justplay/1.png",
+          "alt": "JustPlay application",
+          "description": "JustPlay Game Detail."
+        }
+      ]
     }
   ]
