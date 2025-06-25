@@ -328,8 +328,8 @@
     {
       "title": "JustPlay",
       "imageSrc": "justplay/1.png",
-      "description": "Currently developing a TypeScript-based web application designed to host and organize sports events. The platform enables users to create, manage, and participate in events while facilitating real-time communication. It features a user-friendly interface that supports instant messaging, multiple chat rooms, and private conversations, ensuring seamless interaction and coordination among users.",
-      "skills": ["TypeScript", "SupaBase", "Git", "HTML"],
+      "description": "Currently developing a TypeScript-based web application designed to host and organise sports events. The platform enables users to create, manage, and participate in events while facilitating real-time communication. It features a user-friendly interface that supports instant messaging, multiple chat rooms, and private conversations, ensuring seamless interaction and coordination among users.",
+      "skills": ["TypeScript", "React", "SupaBase", "Git"],
       "demo": "",
       "source": "",
       "screenshots":[
