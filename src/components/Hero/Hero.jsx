@@ -9,11 +9,9 @@ export const Hero = () => {
         <div className={styles.content}>
             <h1 className={styles.title}> Hi, i'm Hakeem</h1>
             <p className={styles.description}>
-            I’m a versatile developer passionate about crafting elegant, user-focused digital solutions across web, mobile, and AI platforms. 
-            My technical expertise spans frontend (React, JavaScript, HTML/CSS), backend (Node.js, Java, SQL), and mobile development (Android, Xamarin). 
-            I’ve built projects like an AI-powered symptom checker and a natural language healthcare virtual assistant, combining real-world impact with cutting-edge technology. 
-            I thrive in Agile teams and continuously explore emerging tools—from NLP to cross-platform frameworks—to deliver seamless, innovative experiences across the stack. 
             My portfolio reflects a commitment to solving real problems through thoughtful, user-centered engineering.
+            I am a computing graduate passionate about AI, software development, and cloud systems currently based in London. My technical expertise spans includes frontend (React, Vue, JavaScript, HTML/CSS), backend (Node.js, Java, SQL), and mobile development (Android, Xamarin). 
+            I’ve built projects like an AI-powered symptom checker and a natural language healthcare virtual assistant, combining real-world impact with cutting-edge technology. Open to internships and collaborations — let's build something awesome!
             </p>
             <a href='mailto:keem.kasali@gmail.com' className={styles.contactBtn}>
                 Contact Me
