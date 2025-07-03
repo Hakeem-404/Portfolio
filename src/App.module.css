@@ -1,0 +1,349 @@
+@import "./vars.css";
+
+.App {
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    perspective: 1000px;
+}
+
+/* Loading Screen with 3D Effects */
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--color-bg), var(--color-bg-secondary));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-modal);
+    perspective: 800px;
+}
+
+.loadingSpinner {
+    width: 48px;
+    height: 48px;
+    border: 3px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: 50%;
+    animation: spin3D 1s linear infinite;
+    margin-bottom: var(--space-lg);
+    box-shadow: var(--shadow-3d);
+    transform-style: preserve-3d;
+}
+
+@keyframes spin3D {
+    0% { 
+        transform: rotate(0deg) rotateY(0deg) translateZ(0);
+    }
+    50% {
+        transform: rotate(180deg) rotateY(180deg) translateZ(20px);
+    }
+    100% { 
+        transform: rotate(360deg) rotateY(360deg) translateZ(0);
+    }
+}
+
+.loadingText {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    animation: pulse3D 2s ease-in-out infinite;
+    transform-style: preserve-3d;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse3D {
+    0%, 100% { 
+        opacity: 0.6;
+        transform: translateZ(0) scale(1);
+    }
+    50% { 
+        opacity: 1;
+        transform: translateZ(10px) scale(1.05);
+    }
+}
+
+/* Page Transitions with 3D */
+.pageTransition {
+    animation: pageEnter3D 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    transform-style: preserve-3d;
+}
+
+@keyframes pageEnter3D {
+    from {
+        opacity: 0;
+        transform: translateY(20px) translateZ(-50px) rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateZ(0) rotateX(0deg);
+    }
+}
+
+/* Route Loading Bar with 3D */
+.routeLoading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    z-index: var(--z-fixed);
+    animation: loadingProgress3D 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    transform-style: preserve-3d;
+}
+
+@keyframes loadingProgress3D {
+    0% {
+        transform: translateX(-100%) translateZ(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%) translateZ(10px);
+        opacity: 1;
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.7);
+    }
+    100% {
+        transform: translateX(100%) translateZ(0);
+        opacity: 0;
+    }
+}
+
+/* Scroll Progress Indicator with 3D */
+.scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-bg-secondary);
+    z-index: var(--z-sticky);
+    transform-style: preserve-3d;
+}
+
+.scrollProgress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transition: width 0.1s ease;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+    transform: translateZ(5px);
+}
+
+/* Global 3D Animation Classes */
+.stagger-item {
+    opacity: 0;
+    transform: translateY(20px) translateZ(-10px) rotateX(-5deg);
+    animation: staggerFadeIn3D 0.6s ease-out forwards;
+    transform-style: preserve-3d;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes staggerFadeIn3D {
+    to {
+        opacity: 1;
+        transform: translateY(0) translateZ(0) rotateX(0deg);
+    }
+}
+
+/* Intersection Observer Animations with 3D */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px) translateZ(-20px) rotateX(-10deg);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-style: preserve-3d;
+}
+
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0) translateZ(0) rotateX(0deg);
+}
+
+/* Floating Elements with 3D */
+.floating {
+    animation: float3D 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes float3D {
+    0%, 100% {
+        transform: translateY(0px) translateZ(0) rotateX(0deg);
+    }
+    33% {
+        transform: translateY(-10px) translateZ(10px) rotateX(2deg);
+    }
+    66% {
+        transform: translateY(-5px) translateZ(-5px) rotateX(-1deg);
+    }
+}
+
+/* Gradient Text with 3D Shadow */
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    transform-style: preserve-3d;
+}
+
+/* Glass Morphism Effect with 3D */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-3d);
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+}
+
+.glass:hover {
+    transform: translateZ(10px) rotateX(2deg);
+    box-shadow: var(--shadow-3d-hover);
+}
+
+/* Hover Glow Effect with 3D */
+.hover-glow {
+    position: relative;
+    transition: all var(--transition-3d);
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+}
+
+.hover-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    opacity: 0;
+    z-index: -1;
+    filter: blur(20px);
+    transition: opacity var(--transition-normal);
+    transform: translateZ(-5px);
+}
+
+.hover-glow:hover::before {
+    opacity: 0.3;
+}
+
+.hover-glow:hover {
+    transform: translateZ(15px) rotateX(3deg) rotateY(-2deg);
+}
+
+/* Responsive Grid System with 3D */
+.grid-responsive {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    perspective: 1000px;
+}
+
+.grid-responsive > * {
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: all var(--transition-3d);
+}
+
+.grid-responsive > *:hover {
+    transform: translateZ(10px) rotateX(2deg);
+}
+
+@media (max-width: 768px) {
+    .grid-responsive {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .grid-responsive > *:hover {
+        transform: translateZ(5px);
+    }
+}
+
+/* 3D Button Effects */
+.btn-3d {
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: all var(--transition-3d);
+    box-shadow: var(--shadow-3d);
+}
+
+.btn-3d:hover {
+    transform: translateY(-4px) translateZ(15px) rotateX(5deg);
+    box-shadow: var(--shadow-3d-hover);
+}
+
+.btn-3d:active {
+    transform: translateY(-2px) translateZ(8px) rotateX(2deg);
+    transition: all 0.1s ease;
+}
+
+/* Card 3D Effects */
+.card-3d {
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: all var(--transition-3d);
+    box-shadow: var(--shadow-3d);
+}
+
+.card-3d:hover {
+    transform: translateY(-8px) translateZ(20px) rotateX(5deg) rotateY(-2deg);
+    box-shadow: var(--shadow-3d-hover);
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    .loadingSpinner,
+    .floating,
+    .stagger-item,
+    .animate-on-scroll,
+    .pageTransition,
+    .routeLoading,
+    .glass:hover,
+    .hover-glow:hover,
+    .btn-3d:hover,
+    .card-3d:hover {
+        animation: none !important;
+        transform: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --color-border: #000000;
+        --color-shadow: rgba(0, 0, 0, 0.5);
+        --shadow-3d: 0 8px 16px rgba(0, 0, 0, 0.3);
+        --shadow-3d-hover: 0 16px 32px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Performance optimizations for 3D effects */
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+
+.gpu-accelerated {
+    will-change: transform;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}

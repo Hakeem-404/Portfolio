@@ -1,0 +1,82 @@
+[
+    {
+        "title": "JavaScript",
+        "imageSrc": "misc/javascript.png"
+    },
+    {
+        "title": "Full Stack Development",
+        "imageSrc": "misc/fullstack.png"
+    },
+    {
+        "title": "Python",
+        "imageSrc": "misc/python.png"
+    },
+    {
+        "title": "Java",
+        "imageSrc": "misc/java.png"
+    },
+    {
+        "title": "HTML",
+        "imageSrc": "misc/html.png"
+    },
+    {
+        "title": "CSS",
+        "imageSrc": "misc/css.png"
+    },
+    {
+        "title": "PHP",
+        "imageSrc": "misc/php.png"
+    },
+    {
+        "title": "C#",
+        "imageSrc": "misc/csharp.png"
+    },
+    {
+        "title": "React",
+        "imageSrc": "misc/react.png"
+    },
+    {
+        "title": "MySQL",
+        "imageSrc": "misc/mysql.png"
+    },
+    {
+        "title": "MongoDB",
+        "imageSrc": "misc/mongodb.png"
+    },
+    {
+        "title": "Vue.js",
+        "imageSrc": "misc/vuejs.png"
+    },
+    {
+        "title": "figma",
+        "imageSrc": "misc/figma.png"
+    },    {
+        "title": "ML",
+        "imageSrc": "misc/ai.png"
+    },
+    {
+        "title": "NLP",
+        "imageSrc": "misc/nlp.png"
+    },
+    {
+        "title": "xamarin",
+        "imageSrc": "misc/xamarin.png"
+    },
+    {
+        "title": "UML",
+        "imageSrc": "misc/uml.png"
+    },
+    {
+        "title": "Git/Version Control",
+        "imageSrc": "misc/vc.png"
+    },
+    {
+    
+        "title": "Android Studio",
+        "imageSrc": "misc/android.png"
+    },
+    {
+        "title":".NET MAUI",
+        "imageSrc": "misc/maui.png"
+    }
+]

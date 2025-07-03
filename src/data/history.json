@@ -1,0 +1,30 @@
+[
+    {
+        "role": "Computing BSc",
+        "organisation": "University of Greenwich",
+        "startDate": "23-09-2021",
+        "endDate": "Present",
+        "experience": ["Completed BSc Computing with a first class classification with focus on, AI application development and software engineering", 
+                        "Developed multiple full-stack applications including mobile apps, web interfaces, and database systems",
+                        "Applied object-oriented programming principles and agile methodologies in team-based projects",
+                        "Gained experience in software development lifecycle, from requirements gathering to deployment and maintenance",
+                        "Worked with various programming languages and frameworks including Java, Python, React, and Node.js",
+                        "Gained hands-on experience with system architecture design, testing frameworks, and UX/UI development"
+                    ],
+        "imageSrc": "misc/uog.png"
+    }
+    ,
+    {
+        "role": "IT Intern",
+        "organisation": "Avail Gateway Ltd",
+        "startDate": "12-06-2024",
+        "endDate": "30-11-2024",
+        "experience": [	"Supported the software development team in the design and deployment of a web-based inventory management system for a retail client",
+                        "Contributed to front-end and back-end development using HTML, CSS, JavaScript, and Python (Flask), achieving an 80% reduction in manual inventory tracking errors",
+                        "Improved data retrieval speeds by 30% by optimising SQL queries in the system’s relational database",
+                        "Participated in agile sprint meetings and collaborated on code development using Git and GitHub",
+                        "Conducted unit testing in Python",
+                        "Assisted with AWS cloud deployment, including environment setup and maintenance"],
+        "imageSrc": "misc/avail.png"
+    }
+]
