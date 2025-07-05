@@ -287,6 +287,59 @@
     transition: all 0.1s ease;
 }
 
+.submitButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submitButton:disabled:hover {
+    transform: none;
+    box-shadow: var(--shadow-3d);
+}
+
+.successMessage {
+    background: var(--color-success);
+    color: var(--color-text-inverse);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
+    animation: messageSlideIn 0.3s ease-out;
+}
+
+.errorMessage {
+    background: var(--color-error);
+    color: var(--color-text-inverse);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
+    animation: messageSlideIn 0.3s ease-out;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formInput:disabled,
+.formTextarea:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: var(--color-bg-secondary);
+}
+
 /* Social Links */
 .socialLinks {
     display: flex;

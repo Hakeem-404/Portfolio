@@ -10,6 +10,8 @@ export const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -19,13 +21,31 @@ export const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Create mailto link with form data
-    const mailtoLink = `mailto:keem.kasali@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-    window.location.href = mailtoLink;
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mqaboqel', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -95,6 +115,18 @@ export const Contact = () => {
             <form className={styles.form} onSubmit={handleSubmit}>
               <h3 className={styles.formTitle}>Send me a message</h3>
               
+              {submitStatus === 'success' && (
+                <div className={styles.successMessage}>
+                  Thank you! Your message has been sent successfully.
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className={styles.errorMessage}>
+                  Sorry, there was an error sending your message. Please try again.
+                </div>
+              )}
+              
               <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.formLabel}>
                   Your Name
@@ -107,6 +139,7 @@ export const Contact = () => {
                   onChange={handleInputChange}
                   className={styles.formInput}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -122,6 +155,7 @@ export const Contact = () => {
                   onChange={handleInputChange}
                   className={styles.formInput}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -137,6 +171,7 @@ export const Contact = () => {
                   onChange={handleInputChange}
                   className={styles.formInput}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -152,11 +187,16 @@ export const Contact = () => {
                   className={styles.formTextarea}
                   rows="5"
                   required
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
 
-              <button type="submit" className={styles.submitButton}>
-                Send Message
+              <button 
+                type="submit" 
+                className={styles.submitButton}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
